@@ -1,7 +1,7 @@
-{
+ {
   "name": "open-source-arbeitszeiterfassung",
   "version": "1.0.0",
-  "description": "Eine einfache Webanwendung zur Erfassung und Verwaltung von Arbeitsstunden in Open-Source-Projekten.",
+  "description": "A simple web application for tracking and managing work hours in open-source projects.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
