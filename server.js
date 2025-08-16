@@ -19,6 +19,12 @@ const connectToDatabase = async () => {
 
 connectToDatabase();
 
+// Middleware zur Fehlerbehandlung
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Etwas ist schief gelaufen!');
+});
+
 app.listen(PORT, () => {
   console.log(`Server läuft auf http://localhost:${PORT}`);
 });
